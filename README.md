@@ -15,7 +15,11 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ## Overview
 
-
+<div>
+  <h2>Video Demo</h2>
+  <video src="./src/assets/video.mp4" autoplay> 
+  </video>
+</div>
 
 ### The challenge
 
