@@ -131,7 +131,6 @@ export default function Homepage() {
             <button className="absolute w-[144px] sm:w-[272px] h-[144px] sm:h-[272px] bg-white font-['Bellefair'] uppercase rounded-full text-[18px] sm:text-[32px] flex items-center justify-center hover:text-opacity-50">
               Explore
             </button>
-            {/* <div className="absolute w-[144px] sm:w-[272px] h-[144px] sm:h-[272px] rounded-full bg-white opacity-10 hover:scale-[1.25] md:hover:scale-[1.60] cursor-pointer transition duration-300 ease-in-out delay-150"></div> */}
             <div
               ref={pulseRef}
               onMouseEnter={handleMouseEnter}

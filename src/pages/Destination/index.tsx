@@ -227,12 +227,12 @@ export default function Destination() {
             </span>
 
             <div className="flex gap-6 md:gap-42 flex-col md:flex-row items-center md:items-start px-[24px] sm:px-[127px] md:px-0">
-              <div className="w-full h-full flex justify-center">
+              <div className="w-full h-full flex justify-center items-center">
                 <img
                   key={currentDestination?.name}
                   src={currentDestination?.images.webp}
                   alt=""
-                  className="animate-astro md:w-full h-auto sm:w-[250px] w-[150px]"
+                  className="animate-astro md:w-full h-full max-h-[480px] sm:w-[250px] w-[150px]"
                 />
               </div>
 
@@ -262,12 +262,12 @@ export default function Destination() {
                 <h1 className="animate-text text-[56px] leading-16 sm:text-[80px] md:text-[96px] font-['Bellefair'] font-normal uppercase text-white text-center md:text-left">
                   {currentDestination?.name}
                 </h1>
-                <p className="animate-text text-sm sm:text-base md:text-lg text-center md:text-left font-thin leading-8 md:min-h-[128px]">
+                <p className="animate-text text-sm sm:text-base md:text-lg text-center md:text-left font-thin leading-8 md:min-h-[128px] mt-6">
                   {currentDestination?.description}
                 </p>
 
                 <div
-                  className="animate-line w-full h-[1px] bg-gray-700 my-6 md:my-12"
+                  className="animate-line w-full h-[1px] bg-gray-700 my-6 md:my-10"
                   style={{ width: 0 }}
                 ></div>
 

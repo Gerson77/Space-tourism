@@ -5,14 +5,13 @@ export function parseDistance(raw: string): number {
   if (raw.includes("mil")) return num * 1_000_000;
   if (raw.includes("bil")) return num * 1_000_000_000;
 
-  return num; // Assume valor em milhar se tiver vírgula
+  return num; 
 }
 
 export function formatDistance(raw: string, value: number): string {
   if (raw.includes("mil")) return `${(value / 1_000_000).toFixed(0)} mil. km`;
   if (raw.includes("bil")) return `${(value / 1_000_000_000).toFixed(1)} bil. km`;
 
-  // valor normal com milhar
   return `${Math.round(value).toLocaleString("en-US")} km`;
 }
 
