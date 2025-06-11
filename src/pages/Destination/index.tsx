@@ -86,7 +86,7 @@ export default function Destination() {
     );
     gsap.to(elements, {
       opacity: 0,
-      y: -40,
+      y: -10,
       duration: 0.6,
       ease: "power2.in",
       onComplete: () => {
@@ -180,7 +180,6 @@ export default function Destination() {
   useGSAP(() => {
     if (!currentDestination) return;
 
-    // DISTANCE
     const rawDistance = currentDestination.distance;
     const finalDistance = parseDistance(rawDistance);
 
@@ -199,7 +198,6 @@ export default function Destination() {
       },
     });
 
-    // TRAVEL
     const rawTravel = currentDestination.travel;
     const finalTravel = parseTravel(rawTravel);
 
