@@ -236,7 +236,7 @@ export default function Destination() {
             </div>
 
             <div className="w-full flex flex-col pb-4">
-              <ul className="flex gap-8 text-[16px] tracking-[2px] pb-4 md:mb-6 items-center justify-center md:justify-start">
+              <ul className="flex gap-8 text-[16px] tracking-[2px] pb-4 md:mb-6 items-center justify-center md:justify-start mt-2">
                 {destinations.map((dest) => (
                   <li
                     key={dest.id}
