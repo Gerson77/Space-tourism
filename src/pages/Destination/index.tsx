@@ -217,7 +217,7 @@ export default function Destination() {
   return (
     <div className="overflow-hidden">
       <section className="w-full h-screen bg-[url('./assets/destination/background-destination-desktop.jpg')] bg-no-repeat bg-center bg-cover flex items-center">
-        <div className="w-full h-full max-w-[1110px] mx-auto flex flex-col justify-between items-end md:mb-[126px] text-white">
+        <div className="w-full h-full max-w-[1110px] mx-auto flex flex-col justify-between items-end md:mb-[126px]">
           <span className="animate-links tracking-[4px] text-base text-center sm:text-left w-full sm:text-[20px] md:text-[28px] font-['Barlow_Condensed'] uppercase text-white sm:pl-[40px] md:pl-0 mt-[102px] sm:mt-[136px] md:mt-[224px]">
             <strong className="pr-2 font-bold opacity-30 ">01 </strong>Pick Your
             Destination
@@ -233,8 +233,8 @@ export default function Destination() {
               />
             </div>
 
-            <div className="w-full flex flex-col pb-4">
-              <ul className="flex gap-8 text-[16px] tracking-[2px] pb-4 md:mb-6 items-center justify-center md:justify-start mt-2">
+            <div className="w-full flex flex-col pb-4 relative mt-12 sm:mt-1">
+              <ul className="flex gap-8 text-[16px] tracking-[2px] pb-4 md:mb-6 items-center justify-center md:justify-start absolute -top-12 sm:top-0 w-full sm:relative">
                 {destinations.map((dest) => (
                   <li
                     key={dest.id}
@@ -247,7 +247,7 @@ export default function Destination() {
                       className={`${navButton} ${
                         selectDestination === dest.name.toLowerCase()
                           ? "text-white border-white"
-                          : ""
+                          : "text-[#D0D6F9]"
                       }`}
                     >
                       {dest.name}
@@ -259,7 +259,7 @@ export default function Destination() {
               <h1 className="animate-text text-[56px] leading-16 sm:text-[80px] md:text-[96px] font-['Bellefair'] font-normal uppercase text-white text-center md:text-left">
                 {currentDestination?.name}
               </h1>
-              <p className="animate-text text-sm sm:text-base md:text-lg text-center md:text-left font-thin leading-8 md:min-h-[128px] md:mt-6">
+              <p className="animate-text text-sm sm:text-base md:text-lg text-center md:text-left font-thin leading-8 md:min-h-[128px] md:mt-6  text-[#D0D6F9]">
                 {currentDestination?.description}
               </p>
 
@@ -270,7 +270,7 @@ export default function Destination() {
 
               <div className="flex md:justify-between justify-center flex-col sm:flex-row overflow-hidden">
                 <div className="w-full text-center md:text-left pb-4 sm:pb-12 uppercase">
-                  <span className="animate-text text-sm font-['Barlow_Condensed'] inline-block">
+                  <span className="animate-text text-sm font-['Barlow_Condensed'] inline-block text-[#D0D6F9]">
                     Avg. distance
                   </span>
                   <h4
@@ -281,7 +281,7 @@ export default function Destination() {
                   </h4>
                 </div>
                 <div className="w-full text-center md:text-left pb-4 uppercase">
-                  <span className="animate-text text-sm font-['Barlow_Condensed'] inline-block">
+                  <span className="animate-text text-sm font-['Barlow_Condensed'] inline-block text-[#D0D6F9]">
                     Est. travel time
                   </span>
                   <h4
